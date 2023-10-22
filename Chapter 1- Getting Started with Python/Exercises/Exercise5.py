@@ -1,11 +1,9 @@
-# Value of pi (part of the exercise)
+''' Instructions for exercise 1.5
+Write a Python program which accepts the radius of a circle from the user and compute the area.'''
+
+
 pi = 3.14
-
-# take input from user
 r = float(input ("Input the radius of the circle : "))
-
-# compute the area from radius of a circle given by user
 calculateArea = str(pi * r**2);
 
-#print result
 print ("The area of the circle with radius " + str(r) + " is: " + calculateArea)
