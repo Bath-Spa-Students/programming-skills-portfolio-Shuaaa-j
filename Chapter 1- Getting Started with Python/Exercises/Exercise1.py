@@ -7,7 +7,7 @@ Twinkle, twinkle, little star,
 Twinkle, twinkle, little star, 
 	How I wonder what you are'''
 
-# Prints the strings in a specific format
+# Prints the string in a specific format
 print ("""Twinkle, twinkle, little star,
                  How I wonder what you are!
                     Up above the world so high,

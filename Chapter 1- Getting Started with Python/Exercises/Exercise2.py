@@ -4,10 +4,10 @@ Write a Python program to get the Python version you are using.'''
 # Imports the sys module to access the python version and info
 import sys
 
-# Prints Python Version
+# Prints the Python Version
 print("Python version:")
 print (sys.version)
 
-# Prints Python Version Info
+# Prints the Python Version Info
 print("Version info:")
 print (sys.version_info)
