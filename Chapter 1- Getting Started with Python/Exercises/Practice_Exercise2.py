@@ -1,0 +1,71 @@
+'''Instructions for practice exercise 1.2
+Create a program to output “hi” 50 times, without any separator.'''
+
+# Loop 50 times
+for x in range(50):
+    # Print the string "hi" without a separator
+    print("hi", end='')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
