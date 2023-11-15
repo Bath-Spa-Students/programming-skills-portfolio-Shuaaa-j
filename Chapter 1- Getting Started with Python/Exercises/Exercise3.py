@@ -8,4 +8,4 @@ import datetime
 current_time = datetime.datetime.now()
 
 # Prints the current date and time
-print("The current date and time now in the UAE is:", current_time)
+print("The current date and time in the UAE is:", current_time)

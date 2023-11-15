@@ -9,5 +9,5 @@ print("Python version:")
 print (sys.version)
 
 # Prints the Python Version Info
-print("Version info:")
+print("\nVersion info:")
 print (sys.version_info)

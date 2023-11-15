@@ -7,4 +7,4 @@ last_name = "Gofulco"
 favorite_language = "Python"
 
 # Prints the output string
-print ("Hi! My name is " + first_name + " " + last_name +  " and my favorite language is " + favorite_language + "!")
+print ("Pleasant greetings! My name is " + first_name + " " + last_name +  " and my favorite language is " + favorite_language + "!")

@@ -5,7 +5,7 @@ Write a Python program which accepts the radius of a circle from the user and co
 pi = 3.14
 
 # Gets the radius of the circle from the user and convert it to a float
-r = float(input ("Input the radius of the circle : "))
+r = float(input ("Input the radius of the circle: "))
 
 # Calculates the area of the circle using the formula and convert it to a string to display
 Calculate_Area = str(pi * r**2)
