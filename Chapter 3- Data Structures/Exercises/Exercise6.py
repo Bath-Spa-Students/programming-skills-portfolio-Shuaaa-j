@@ -3,30 +3,55 @@ You just found out that your new dinner table won’t arrive in time for the din
 
 •Start with your program from Exercise 3-5. Add a new line that prints a message saying that you can invite only two people for dinner.
 
-•Use pop() to remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
+•Use pop() to remove guests from your list one at a time until only two names remain in your list. 
+Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner.
 
 •Print a message to each of the two people still on your list, letting them know they’re still invited.
 
-•Use del to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.'''
+•Use del to remove the last two names from your list, so you have an empty list. Print your list to 
+make sure you actually have an empty list at the end of your program.'''
 
-people = "Mathilda, Grandma Teresita, Kiara"
-list = people.split(', ')
+# Defines the list of guests
+guests = ["King Solomon", "Grandma Teresita", "Mathilda"]
 
-for person in list:
-    invitation = "Dear " + person + ", if you're not busy, I'd like to invite you to dinner at my house at 8. I hope to see you there!"
-    print(invitation)
+# Prints an invitation to the guests
+print(f"Dear {guests[0]}, I'd love to hear your stories over some good food. I'd be honored to have you join us for dinner.")
 
-print("\n Oh my deepest apologies! I forgot the dinner table can only accommodate two guests!\n")
+print(f"Dear {guests[1]}, I've missed you so much! I'd like to invite you over for dinner at my place.")
 
-while len(list) > 2:
-    removed_guest = list.pop()
-    print("Aplogies " + removed_guest + ". I planned poorly, and it seems I invited too much people and there's not enough space. Let's have dinner some other time!")
+print(f"Dear {guests[2]}, I hope you are well! It would be delightful if you were to join us for dinner.")
 
-for person in list:
-    invitation = "Dear " + person + ", you can still come to dinner if you're free."
-    print(invitation)
+# Prints an apology
+name = guests[1]
+print(f"\nDear {guests[0]}, it seems our current schedules don't match. Let's grab a bite some other time!")
 
-del list[-2:] 
-print("Current number of peoplel on the list:", list) 
+# Removes a guest
+del(guests[0])
 
+# Adds one guest
+guests.insert(1, "Ms. Rafia")
 
+# Prints the invitations again
+print(f"\nDear {guests[0]}, if you're still available, plans for dinner is still on!")
+
+print(f"Dear {guests[1]}, pleasant greetings! We're having dinner at my house, and I'd love for you to come.")
+
+print(f"Dear {guests[2]}, dinner will be at 8, hopefully I'll see you there!")
+
+print("\nOh no! We only have food for two guests.")
+
+# Removes guests
+name = guests.pop()
+print(f"I'm so sorry {name}, let's have dinner some other time.")
+
+# Prints formatted strings
+print(f"\nDear {guests[0]}, if you're still available, plans for dinner is still on!.")
+
+print(f"Dear {guests[1]}, see you at 8 for dinner!.")
+
+# Removes the remaining guests
+del(guests[0])
+del(guests[0])
+
+# Prints to confirm that the list is empty
+print("Current guest list:", guests)

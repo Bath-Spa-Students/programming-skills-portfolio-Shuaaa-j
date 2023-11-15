@@ -9,21 +9,29 @@ someone else to invite.
 
 •Print a second set of invitation messages, one for each person who is still in your list.'''
 
+# Defines the list of guests
+guests = ["King Solomon", "Grandma Teresita", "Mathilda"]
 
-people = "King Solomon, Grandma Teresita, Kiara"
-list = people.split(', ')
+# Prints an invitation to the guests
+print(f"Dear {guests[0]}, I'd love to hear your stories over some good food. I'd be honored to have you join us for dinner.")
 
-for person in list:
-    invitation = "Dear " + person + ", if you're not busy, I'd like to invite you to dinner at my house at 8. I hope to see you there!"
-    print(invitation)
+print(f"Dear {guests[1]}, I've missed you so much! I'd like to invite you over for dinner at my place.")
 
-guest_cant = "King Solomon"
-print("\nUnfortunately, " + guest_cant + " has other plans.\n")
+print(f"Dear {guests[2]}, I hope you are well! It would be delightful if you were to join us for dinner.")
 
-new_guest = "Mathilda"
-list[list.index(guest_cant)] = new_guest
+# Prints an apology
+name = guests[1]
+print(f"\nDear {guests[0]}, it seems our current schedules don't match. Let's grab a bite some other time!")
 
-print("New invitation list:")
-for person in list:
-    invitation = "Dear " + person + ", if you're free, I'd like you to come visit me at my house for dinner at 8!"
-    print(invitation)
+# Removes a guest
+del(guests[0])
+
+# Adds one guest
+guests.insert(1, "Ms. Rafia")
+
+# Prints the invitations again
+print(f"\nDear {guests[0]}, if you're still available, plans for dinner is still on!")
+
+print(f"Dear {guests[1]}, pleasant greetings! We're having dinner at my house, and I'd love for you to come.")
+
+print(f"Dear {guests[2]}, dinner will be at 8, hopefully I'll see you there!")
